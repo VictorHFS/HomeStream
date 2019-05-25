@@ -1,0 +1,44 @@
+{
+  "name": "home-stream",
+  "version": "1.0.0",
+  "description": "Stream videos throuth your home",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch \"src/\" --exec \"ts-node src/entry.ts\" -e ts",
+    "test": "jest --no-cache",
+    "build": "tsc",
+    "prod": "npm run build && node dist/entry.js"
+  },
+  "keywords": [
+    "video",
+    "stream"
+  ],
+  "author": "victor soares",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/jest": "^24.0.13",
+    "@types/supertest": "^2.0.7",
+    "express": "^4.17.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
