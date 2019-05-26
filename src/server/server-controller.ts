@@ -6,7 +6,7 @@ const vsController = new VideoStreamController()
 export default class ServerController {
 	async get(req: Request, res: Response) {
 		const { range } = req.headers;
-		const movieName = 'movies/test.mp4';
+		const movieName = 'test.mp4';
 		vsController.streamVideo(res, movieName, range);
 	}
 
